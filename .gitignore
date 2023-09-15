@@ -34,3 +34,15 @@
 !/app/assets/builds/.keep
 
 /node_modules
+
+# Only include if you have production secrets in this file, which is no longer a Rails default
+# config/secrets.yml
+
+# dotenv
+# TODO Comment out this rule if environment variables can be committed
+.env
+
+# .env.*.local files are where we put actual
+# secrets we need for dev and test, so
+# we really don't want them in version control
+.env.*.local
